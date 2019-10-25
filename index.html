@@ -68,7 +68,23 @@
         </div>
         <div class="col-lg-8 align-self-baseline">
           <p class="text-white-75 font-weight-light mb-5">UiBrains is dedicated to educate and enhance your knowledge of developing User Interfaces and make you the perfect UI / Full Stack Web Developer</p>
-          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+
+          <!-- Count Down Timer -->
+          <div class="container mb-4">
+            <div class="row">
+              <div class="col m-auto text-white">
+                <div class="myCountdown" data-date="2019-11-01 04:59:59">
+                  <h3>Ui with Full Stack Online Class will start in</h3>
+                  <h2 class="d-inline"><span class="counter-days"></span><small class="text-primary"> Days</small></h2>
+                  <h2 class="d-inline"><span class="counter-hours"></span><small class="text-primary"> Hours</small></h2>
+                  <h2 class="d-inline"><span class="counter-minutes"></span><small class="text-primary"> Minutes</small></h2>
+                  <h2 class="d-inline"><span class="counter-seconds"></span><small class="text-primary"> Seconds</small></h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#online-classes">Register</a>
         </div>
       </div>
     </div>
@@ -280,6 +296,14 @@
   <!-- Custom scripts for this template -->
   <script src="js/creative.min.js"></script>
 
+  <!-- Count Down timer -->
+  <script src="js/loopcounter.js"></script>
+
+  <script>
+    $(function(){
+      loopcounter('myCountdown');
+    });
+  </script>
 </body>
 
 </html>
